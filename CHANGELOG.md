@@ -1,4 +1,9 @@
 # Changelog
+## [Unreleased]
+### Fixes
+- Preserve inherited ACL edges restricted to standard AD object classes when LDAP input omits schema objects, while honoring collected schema mappings and class restrictions.
+- Exclude inherit-only ACEs from permissions on the current object, including when the ACE is inherited.
+
 ## [0.4.25] - 4/25/2026
 ### Fixes
 - Fixed issue causing crash if OC2 task did not recieve output [#60](https://github.com/coffeegist/bofhound/pull/60)
